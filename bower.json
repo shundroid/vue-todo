@@ -1,0 +1,20 @@
+{
+  "name": "vue-todo",
+  "authors": [
+    "shundroid <ra24483@qb3.so-net.ne.jp>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^1.0.22"
+  }
+}
