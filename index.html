@@ -6,11 +6,13 @@
   <script type="text/javascript" src="js/build/bundle.js"></script>
 </head>
 <body>
-  <h1>hoge</h1>
   <div id="app">
+    <todo-title></todo-title>
+    <input type="text" @keyup.enter="addTodo" v-model="newTodo" />
     <ul>
       <li v-for="todo in todos">
-        {{ todo }}
+        {{ todo.text }}
+        <button @click="removeTodo($index)">X</button>
       </li>
     </li>
   </div>
