@@ -1,10 +1,11 @@
 var Vue = require("vue");
 import TodoTitle from "./todo-title.vue";
+import TodoItem from "./todo-item.vue";
 
 document.addEventListener("DOMContentLoaded", function() {
   var app = new Vue({
     el: "#app",
-    components: { TodoTitle },
+    components: { TodoTitle, TodoItem },
     data: {
       newTodo: "",
       todos: []

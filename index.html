@@ -10,10 +10,9 @@
     <todo-title></todo-title>
     <input type="text" @keyup.enter="addTodo" v-model="newTodo" />
     <ul>
-      <li v-for="todo in todos">
-        {{ todo.text }}
-        <button @click="removeTodo($index)">X</button>
-      </li>
+      <todo-item v-for="todo in todos" :text="todo.text"
+        :click-remove-button-callback="removeTodo"
+        :todo-index="$index"></todo-item>
     </li>
   </div>
 </body>
